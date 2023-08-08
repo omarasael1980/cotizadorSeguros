@@ -1,9 +1,11 @@
-import React from 'react'
+import { CotizadorProvider } from './context/CotizadorProvider'
+import AppSeguro from './components/AppSeguro'
 
 export default function App() {
   return (
-    <h1>
-      JUJ
-    </h1>
+    <CotizadorProvider>
+      <AppSeguro/>
+    </CotizadorProvider>
+     
   )
 }
